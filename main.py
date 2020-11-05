@@ -159,9 +159,9 @@ def main():
     w1 = bgr_image_input.shape[1]
     faces = []
     
+    fname = "OUTPUT5.avi"
     try:
         fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
-        fname = "OUTPUT5.avi"
         fps = 20.0
         videoWriter = cv2.VideoWriter(fname, fourcc, fps, (w1, h1))
     except:
